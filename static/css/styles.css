@@ -60,12 +60,15 @@ h6 {
   color: var(--primary);
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen,
+  font-family: Roboto slab, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen,
     Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   word-break: break-word;
   background: var(--theme);
+  text-align: justify;
+  text-justify: auto;
+  text-wrap: pretty;
 }
 article,
 aside,
@@ -352,6 +355,7 @@ body:not(.dark) #sun {
   width: 26px;
 }
 code {
+  font-family: Cascadia Mono, monospace;
   direction: ltr;
 }
 div.highlight,
@@ -619,7 +623,7 @@ pre:hover .copy-code {
 .post-content code {
   margin: auto 4px;
   padding: 4px 6px;
-  font-size: 0.78em;
+  font-size: 0.9em;
   line-height: 1.5;
   background: var(--code-bg);
   border-radius: 2px;
@@ -629,7 +633,7 @@ pre:hover .copy-code {
   margin: auto 0;
   padding: 10px;
   color: #d5d5d6;
-  background: var(--hljs-bg) !important;
+  /* background: var(--hljs-bg) !important; */
   border-radius: var(--radius);
   overflow-x: auto;
   word-break: break-all;
